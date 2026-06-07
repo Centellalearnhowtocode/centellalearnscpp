@@ -3,6 +3,9 @@ using namespace std;
 int main() {
   int x; 
   x = 5;
-  cout << x '\n' << endl;
+  int y;
+  y = 25;
+  cout << x << endl;
+  cout << y << '\n'<< endl;
   return 0;
 }
