@@ -4,7 +4,7 @@
 #include <chrono>
 using namespace std;
 int main(){
-  auto now = chrono::system_clock::now();
+  
   string day;
   cout <<"Enter today's day:";
   cin >> day;
