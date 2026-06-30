@@ -1,5 +1,5 @@
 #include <iostream>
-
+#include <iomanip>
 using namespace std;
 namespace before{
 int a2 = 50;
@@ -22,10 +22,17 @@ int main (){
  cout << "The area is " << A << endl;
 
  // Excercise 2
- 
- int a2, b2;
+ //solution 1
+ int a2 =50 , b2 =30;
  cout << "Before swapping the value is:  a = " << before::a2 << " b = " << before::b2 << endl;
  cout << "After swapping the value is:  a = " << after::a2 << " b = " << after::b2 << endl;
+ 
+ //solution 2 using
+ int temp;
+ temp = a2;
+ a2 = b2;
+ cout << "Before swapping the value is:  a = " << a2 << " b = " << b2 << endl;
+ cout << "After swapping the value is:  a = " << a2 << " b = " << b2 << endl;
  
  // Excercise 3
  int a = 10;
@@ -49,8 +56,8 @@ int main (){
  cout << "5. x + y * c = " << fifth << endl;
  cout << "6. (x + y) / c = " << sixth << endl;
  cout << "7. a + (int)x % b = " << seventh << endl;
- cout << "8. x/ y + a - c * b = " << eighth << endl;
-
+ cout << "8. x/ y + a - c * b = " << eighth << setprecision(9)<< endl;
+  
 
 
 
