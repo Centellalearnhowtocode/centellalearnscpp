@@ -1,0 +1,1 @@
+t <<"Enter today's day:";

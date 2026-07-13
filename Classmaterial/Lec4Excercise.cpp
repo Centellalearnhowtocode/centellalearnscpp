@@ -22,6 +22,7 @@ int main (){
  cout << "The area is " << A << endl;
 
  // Excercise 2
+ 
  //solution 1
  int a2 =50 , b2 =30;
  cout << "Before swapping the value is:  a = " << before::a2 << " b = " << before::b2 << endl;
