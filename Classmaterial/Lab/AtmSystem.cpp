@@ -11,9 +11,9 @@ int main (){
     cout <<"Insufficient Funds"<<
     withdrawamt < currentbalance;
  }
- //cout <<"Current Balance        : "<< currentbalance <<endl;
- //cout <<"Enter withdrawal amount: "<< withdrawamt <<endl;
- //cout <<"Remaining Balance      : "<< remainingbalance <<endl;
+   cout <<"Current Balance        : "<< currentbalance <<endl;
+   cout <<"Enter withdrawal amount: "<< withdrawamt <<endl;
+   cout <<"Remaining Balance      : "<< remainingbalance <<endl;
 
 
     return 0;
