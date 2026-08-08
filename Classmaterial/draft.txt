@@ -1,0 +1,45 @@
+#include <iostream>
+using namespace std;
+int main (){
+
+int choice;
+int totalslot =20;
+int occslot =0;
+int extrahour = 0;
+double totalincome = 0.0;
+int enterhour = 0;
+int exithour = 0;
+double totalpayment = 0.0;
+
+cout << "Select menu"; 
+cin>> choice;
+
+if (choice == 1){
+    do {
+        cout << "Enter the number of occupied slots: ";
+        cin >> occslot;
+    } while (occslot < 0 || occslot > totalslot);
+}
+else if (choice ==2){
+   do {
+    cout << "Enter hour: ";
+    cin >> enterhour;
+    cout << "Exit hour: ";
+    cin >> exithour;
+} while (enterhour < 0 || enterhour > 24 || exithour < 0 || exithour > 24 || exithour <= enterhour);
+
+int hours = exithour - enterhour;
+
+if (hours <= 2)
+    totalpayment = 2.0;
+else
+    totalpayment = 2.0 + (hours - 2) * 1.5;
+
+cout << "Total payment: $" << totalpayment << endl;
+
+
+
+
+
+    return 0;
+}}
