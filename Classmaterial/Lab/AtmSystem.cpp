@@ -1,20 +1,31 @@
 #include <iostream>
 using namespace std;
 int main (){
- double currentbalance;
- double withdrawamt;
- double remainingbalance;
 
- cout <<"Enter withdrawal amount: ";
- cin <<withdrawamt;
- do{
-    cout <<"Insufficient Funds"<<
-    withdrawamt < currentbalance;
- }
-   cout <<"Current Balance        : "<< currentbalance <<endl;
-   cout <<"Enter withdrawal amount: "<< withdrawamt <<endl;
-   cout <<"Remaining Balance      : "<< remainingbalance <<endl;
+   double balance = 1000;
+   double withdraw;
+   char choice = 'Y';
+   
+   
+   do
+   {
+   cout << "=========ATM Withdrawal System========= \n";
+   cout << "Current Balance \t\t\t: $1000 \n";
+   cout <<"Please enter the withdrawal amount\t: $";
+   cin >> withdraw;
+   while(withdraw>balance)
+   {
+      cout << "You have insufñficient balance. \n"; 
+      cin >> withdraw;
+   }
+   balance = balance - withdraw;
+   cout << "Your remaining balance is \t\t:$" << balance ;
 
-
-    return 0;
+   cout << "Do you wanna continure? (Y/N): ";
+   cin >> choice;
+   cout << "\n";
+   }
+   while (choice == 'Y' || choice == 'y');
+   cout << "\n===========end of the session===========" << endl;
+   return 0;
 }
