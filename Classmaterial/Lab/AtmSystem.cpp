@@ -13,7 +13,7 @@ int main (){
    cout << "Current Balance \t\t\t: $1000 \n";
    cout <<"Please enter the withdrawal amount\t: $";
    cin >> withdraw;
-   while(withdraw>balance)
+   while(withdraw > balance)
    {
       cout << "You have insufñficient balance. \n"; 
       cin >> withdraw;
@@ -27,5 +27,6 @@ int main (){
    }
    while (choice == 'Y' || choice == 'y');
    cout << "\n===========end of the session===========" << endl;
+
    return 0;
 }
